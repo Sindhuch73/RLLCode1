@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-15T20:42:12 IST" name="Default suite" finished-at="2023-09-15T20:43:01 IST" duration-ms="48716">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Tests.TestRunner@449a4f23]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-09-15T20:42:12 IST" name="Default test" finished-at="2023-09-15T20:43:01 IST" duration-ms="48716">
+      <class name="Tests.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Tests.TestRunner@449a4f23]" started-at="2023-09-15T20:42:12 IST" name="setUpClass" finished-at="2023-09-15T20:42:13 IST" duration-ms="575" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4b862408]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Tests.TestRunner@449a4f23]" started-at="2023-09-15T20:42:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-15T20:43:01 IST" duration-ms="48066" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A user must be able to navigate the URL"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Registration Page]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<Success> but was:<Successaa>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<Success> but was:<Successaa>
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:115)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:125)
+at Tests.StepDefinition.he_should_should_verify(StepDefinition.java:72)
+at ✽.he should should verify- "Success"(file:///C:/Users/chirr/eclipse-workspace/RLLCucumber/Features/user.registration1.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Tests.TestRunner@449a4f23]" started-at="2023-09-15T20:43:01 IST" name="tearDownClass" finished-at="2023-09-15T20:43:01 IST" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Tests.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
